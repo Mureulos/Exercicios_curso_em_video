@@ -1,0 +1,187 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+}
+
+.container {
+    display:flex;
+    justify-content:space-between;
+}
+
+header {
+    display:flex;
+    justify-content:space-around;
+    height:150px;
+}
+
+header .container {
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#FFF;
+    font-weight:bold;
+    text-shadow:4px 4px 2px #0000002a;
+}
+
+.titulo {
+    font-size:2.5em;
+    margin:0 0 20px 0;
+}
+
+.subtitulo {
+    font-size:1.75em
+}
+
+main {
+    display:flex;
+    justify-content:center;
+}
+
+main .container {
+    flex-direction:column;
+    padding:30px 25px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:7px 7px 3px #0000002a;
+    font-size: 1.3em;
+}
+
+form {
+    margin:0 0 30px 0;
+}
+
+.ano_nasc {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:0 0 30px 0;
+}
+
+.input_Nasc {
+    padding:5px 10px;
+    font-size:1em;
+    border:1px solid #c0c0c0;
+    border-radius:25px;
+    outline:none;
+    box-sizing:border-box;
+}
+
+.input_escolha {
+    display:flex;
+    margin:0 0 30px 0;
+}
+
+.Verificar {
+    padding:5px 20px;
+    font-size:0.8em;
+    font-weight:bold;
+    background-color:#c0c0c0;
+    border:none;
+    border-radius:10px;
+    color:#FFF;
+    text-shadow:3px 3px 2px #0000002a;
+}
+
+.Verificar:hover {
+    opacity:0.8;
+}
+
+.segun_prin {
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+img {
+    object-fit:cover;
+    border-radius:1000px;
+}
+
+footer {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:200px;
+    font-size:1.3em;
+    color:#FFF;
+}
+
+.voltar {
+    padding:10px 15px;
+    margin:50px 0 30px 0;
+    border:none;
+    border-radius:10px;
+    background-color:#FFF;
+    font-size:0.9em;
+}
+
+a {
+    text-decoration:none;
+    color:#000;
+}
+
+a:hover {
+    opacity:0.8;
+}
+
+@media (max-width:615px) {
+
+    .titulo {
+        font-size:1.75em;
+    }
+
+    .subtitulo {
+        font-size:1.25em;
+    }
+
+    main .container {
+        margin:0 25px;
+    }
+
+    .ano_nasc {
+        flex-direction:column;
+        align-items:baseline;
+    }
+
+    .input_Nasc {
+        width:100%;
+        margin:15px 0 0 0;
+    }
+
+    .labelSexo {
+        margin:0 0 15px 0;
+    }
+
+    .input_escolha {
+        flex-direction:column;
+    }
+    
+    .Verificar {
+        width:100%;
+    }
+}
+
+@media (max-width:425px) {
+    .titulo {
+        font-size:1.6em;
+    }
+
+    .subtitulo {
+        font-size:1.2em;
+    }
+
+    main .container {
+        font-size:1.1em;
+    }
+
+    .input_escolha2 {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .txtForm {
+        text-align:justify;
+        font-size:1em;
+    }
+}

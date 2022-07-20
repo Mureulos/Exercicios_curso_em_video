@@ -1,0 +1,124 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+}
+
+.container {
+    display:flex;
+    justify-content:space-between;
+    padding:0 50px;
+}
+
+header { /*Area onde o titulo esta ocupado*/
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    height:150px;
+}
+
+header .container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#FFF;
+    font-weight:bold;
+    text-shadow:4px 4px 2px #0000002a;
+}
+
+.titulo {
+    font-size:2.5em;
+    margin:0 0 20px 0;
+}
+
+.subtitulo {
+    font-size:1.75em
+}
+
+.form {
+    margin:0 0 30px 0;
+}
+
+.prin { /*Section que ocupa a area branca*/
+    display:flex;
+    justify-content:center; /*Alinhando tudo que esta dentro da area ao centro na horizontal*/
+    align-items:center; /*Alinhando tudo que esta dentro da area ao centro na vertical*/
+}
+
+.prin .container { /*"Quadrado"*/
+    display:flex;
+    flex-direction:column;
+    padding:30px 25px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:7px 7px 3px #0000002a; /*eixo x, eixo y, blur, cor*/
+    font-size:20px;
+}
+
+.btn_tela { 
+    width:100%;
+    border:0px solid #888888;
+    border-radius:10px;
+    padding:15px 10px;
+    font-size:1em;
+    font-weight:bold;
+    color:#FFF;
+    box-shadow: 5px 5px 2px #00000036;
+}
+
+a {
+    text-decoration:none;
+    color:#000;
+}
+
+a:nth-child(2) {
+    margin:15px 0;
+}
+
+a:hover {
+    opacity:0.8;
+}
+
+footer { /*Area onde o titulo esta ocupado*/
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100px;
+    font-size:20px;
+    color:#FFF;
+}
+
+footer .container {
+    justify-content:center;
+}
+
+
+@media (max-width:615px) {
+
+    .titulo {
+        font-size:1.75em;
+    }
+
+    .subtitulo {
+        font-size:1.25em;
+    }
+
+    .prin .container {
+        margin:0 50px;
+    }
+}
+
+@media (max-width:425px) {
+    .titulo {
+        font-size:1.6em;
+    }
+
+    .subtitulo {
+        font-size:1.2em;
+    }
+
+    .prin .container {
+        font-size:1.1em;
+    }
+}
